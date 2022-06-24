@@ -9,7 +9,6 @@
     "client": "npm run start --prefix client",
     "client:install": "npm install --prefix client",
     "client:build": "npm build --prefix client",
-    "build": "npm run build -- client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
