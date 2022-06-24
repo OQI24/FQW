@@ -1,0 +1,62 @@
+.headerWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  height: 8%;
+
+  .searchWrap {
+    display: flex;
+    width: 30vw;
+    height: 65%;
+    background: #ededf5;
+    border-radius: 0.5vw;
+    margin-right: 10vw;
+    align-items: center;
+    padding-left: 2vw;
+    color: #8d99a6;
+    font-size: .7vw;
+
+  }
+
+  .timeWrap {
+    width: 15vw;
+    height: 65%;
+    color: #030235;
+    margin-right: 10vw;
+    margin-top: 3vh;
+    text-align: center;
+    user-select: none;
+  }
+
+  .timeWrap::first-letter {
+    text-transform: capitalize;
+  }
+
+  .notificationWrap {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 1.5vw;
+
+    .MuiSvgIcon-root {
+      width: 1.5vw;
+      height: 1.5vw;
+    }
+
+    .MuiBadge-badge {
+      right: 5%;
+      top: 10%;
+    }
+  }
+
+  .profileWrap {
+    width: 2.5vw;
+    height: 2.5vw;
+    background: url('../../Icons/profpic.svg') no-repeat;
+    background-size: 100%;
+    margin-right: 1vw;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+
+}

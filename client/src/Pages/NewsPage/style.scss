@@ -1,0 +1,101 @@
+.newsWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .load {
+    width: 3.5%;
+    height: 3.5%;
+    margin: 15% auto 0;
+
+    span {
+      color: #030235;
+    };
+  }
+
+  .headerNewsPage {
+    display: flex;
+    flex-direction: row;
+    margin: 0 4vw;
+    height: 10vh;
+    width: 90%;
+    user-select: none;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(3, 2, 53, 0.2);
+
+
+    .titlePage {
+      color: #030235;
+      font-size: 1.5vw;
+      margin-left: 2vw;
+    }
+
+    .Buttons {
+      color: #030235;
+      height: 70%;
+      margin-right: 2vw;
+
+      .button {
+        color: #030235;
+        height: 100%;
+      }
+
+      .Mui-disabled {
+        color: #8d99a6;
+      }
+    }
+
+    .MuiButton-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65vw;
+      text-transform: none;
+    }
+
+    .MuiSvgIcon-root {
+      font-size: 1vw !important;
+    }
+  }
+
+  .newsSection {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 80vh;
+    padding-left: 6vw;
+    overflow: auto;
+
+
+    .default {
+      position: absolute;
+      top: 25vh;
+      left: 20vw;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      color: #030235;
+
+      .image {
+        height: 45vh;
+        width: 25vw;
+        background: url("../../Icons/Group6902.svg") no-repeat;
+        background-size: 100%;
+      }
+
+      span {
+        font-size: .65vw;
+      }
+    }
+
+    .MuiButton-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65vw;
+      text-transform: none;
+    }
+
+    .MuiSvgIcon-root {
+      font-size: 1vw !important;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.MuiPaper-root {
+  width: 60%;
+  max-width: 60% !important;
+  height: 75%;
+  user-select: none;
+
+  h2 {
+    font-size: 1.5vw;
+  }
+
+  h2::first-letter, p::first-letter {
+    text-transform: capitalize;
+  }
+
+  .MuiDialogContentText-root {
+    font-size: 1vw;
+  }
+}
