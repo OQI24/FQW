@@ -32,7 +32,7 @@ export const FeedForm = ({updateData, setCreateFeed, feed}) => {
     const save = async () => {
         const headers = {'Content-Type': 'application/json'}
         const url = `/api/news/${id ? 'change' : 'create'}`
-        const save = await axios.post(url, JSON.stringify({...state, date: new Date()}), {headers});
+        await axios.post(url, JSON.stringify({...state, date: new Date()}), {headers});
         updateData();
         close();
     }

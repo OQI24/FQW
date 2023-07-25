@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useCallback} from "react";
 import './header.scss'
 import moment from "moment";
 import 'moment/locale/ru';
@@ -8,11 +8,12 @@ import Badge from '@mui/material/Badge';
 export const Header = () => {
     const [time, setTime] = useState(new Date());
 
-    const getTime = () => {
+    const getTime = useCallback(() => {
         setTime(new Date());
         setTimeout(() => getTime(), 1000);
-    }
-    useEffect(() => {getTime()}, []);
+    }, [setTime]);
+
+    useEffect(() => getTime(), [getTime]);
     return(
         <div className={'headerWrap'}>
             <div className={'searchWrap'}>{'Поиск...'}</div>

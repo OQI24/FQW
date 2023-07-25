@@ -8,8 +8,8 @@ export const WorkSpace = () => {
     return(
         <div className={'wrapWorkSpace'}>
             <Routes>
-                <Route path="/" element={<div>{'You are Home'}</div>}/>
-                <Route path="/news" element={<NewsPage/>}/>
+                {/* <Route path="/" element={<div>{'You are Home'}</div>}/> */}
+                <Route path="/" element={<NewsPage/>} exact/>
                 <Route path="/tasks" element={<div>{'tasks'}</div>}/>
                 <Route path="/mail" element={<div>{'mail'}</div>}/>
                 <Route path="/contacts" element={<div>{'contacts'}</div>}/>

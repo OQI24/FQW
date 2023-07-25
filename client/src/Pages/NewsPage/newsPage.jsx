@@ -30,18 +30,18 @@ export const NewsPage = () => {
         if (!selectedFeeds.includes(id)) {
             setSelectedFeeds([...selectedFeeds, id]);
         } else {
-            const result = selectedFeeds.filter(elem => elem != id && elem);
+            const result = selectedFeeds.filter(elem => elem !== id && elem);
             setSelectedFeeds(result);
         }
     }
 
     const openFeed = (id) => {
-        setFeed(news.filter((e) => e.id == id && e)[0]);
+        setFeed(news.filter((e) => e.id === id && e)[0]);
         setReadFeed(true);
     }
 
     const correctFeed = (id) => {
-        setFeed(news.filter((e) => e.id == id && e)[0]);
+        setFeed(news.filter((e) => e.id === id && e)[0]);
         setCreateFeed(true);
     }
 
